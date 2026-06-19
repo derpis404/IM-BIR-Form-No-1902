@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View All Records</title>
+    <link rel="stylesheet" href="0view.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    
+    <!--HEADER TITLE-->
+    <div class="header-title">
+        BIR Form No. 1902
+    </div>
+
+    <!--HEADER SUBTITLE-->
+    <div class="header-subtitle">
+        Application for Registration for Individuals Earning Purely Compensation Income
+    </div>
+
+    <div class="progress-nav">
+
+        <span class="indicator"></span>
+
+        <a href="0view.html" class="nav-item active">ALL RECORDS</a>
+        <a href="2ctaxpayer.html" class="nav-item">TAXPAYER</a>
+        <a href="1ccurrent.html" class="nav-item">CURRENT EMPLOYER</a>
+        <a href="3cspouse.html" class="nav-item">SPOUSE</a>
+        <a href="4cprevious.html" class="nav-item">PREVIOUS/CONCURRENT EMPLOYER</a>
+
+    </div>
+
+    <!--CONTENT BOX/FORM FIELD BOX-->
+<div class="content-card">
+
+  <div class="section-title">ALL RECORDS</div>
+
+  <div class="records-container" id="recordsContainer">
+    <!-- dynamic records will be injected here -->
+</div>
+
+<!-- EMPTY STATE (NEW) -->
+<div id="emptyState" style="display:none; text-align:center; padding:20px; color:#D86B5B;">
+    No records found.
+</div>
+
+</div>
+
+  <!-- PUT CREATE BUTTON HERE -->
+  <div class="nav-buttons">
+    <a href="2ctaxpayer.html" class="next">
+      <span class="normal">CREATE →</span>
+      <span class="hover">NEW TAXPAYER →</span>
+    </a>
+  </div>
+
+
+<script src="0view.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const selectedId = params.get("id");
+
+  // optional highlight if coming from another page later
+  console.log("Selected ID:", selectedId);
+</script>
+
+</body>
+</html>

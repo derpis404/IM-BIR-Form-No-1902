@@ -1,0 +1,11 @@
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Needserver@_45
+      MYSQL_DATABASE: improject
+      MYSQL_PASSWORD: Needserver@_45
+    ports:
+      - "3307:3306"
+

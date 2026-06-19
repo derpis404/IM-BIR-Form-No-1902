@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Taxpayer</title>
+    <link rel="stylesheet" href="2ctaxpayer.css">
+</head>
+
+<body>
+
+    <!--HEADER TITLE-->
+    <div class="header-title">
+        BIR Form No. 1902
+    </div>
+
+    <!--HEADER SUBTITLE-->
+    <div class="header-subtitle">
+        Application for Registration for Individuals Earning Purely Compensation Income
+    </div>
+
+    <div class="progress-nav">
+
+        <span class="indicator"></span>
+
+        <a href="0view.html" class="nav-item">ALL RECORDS</a>
+        <a href="2ctaxpayer.html" class="nav-item active">TAXPAYER</a>
+        <a href="1ccurrent.html" class="nav-item">CURRENT EMPLOYER</a>
+        <a href="3cspouse.html" class="nav-item">SPOUSE</a>
+        <a href="4cprevious.html" class="nav-item">PREVIOUS/CONCURRENT EMPLOYER</a>
+
+    </div>
+
+    <!--CONTENT BOX/FORM FIELD BOX-->
+    <div class="content-card">
+
+        <div class="section-header">
+            <div class="section-title" style="text-align:center;">
+            Taxpayer Information
+            </div>
+        </div>
+
+        <div class="field">
+            <label>Taxpayer's Name</label>
+            <input type="text" id="payerName">
+        </div>
+
+        <div class="field">
+            <label>TIN ID Number</label>
+            <input type="text" id="tinID">
+        </div>
+
+        <div class="field">
+            <label>Taxpayer Type</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="taxtype" value="1"> Local</label>
+                    <label><input type="radio" name="taxtype" value="2"> Resident Alien</label>
+                    <label><input type="radio" name="taxtype" value="3"> Special Non-Resident Alien</label>
+                </div>
+        </div>
+
+        <div class="field">
+            <label>Gender</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="1"> Male</label>
+                    <label><input type="radio" name="gender" value="2"> Female</label>
+                </div>
+        </div>
+
+
+        <div class="field">
+            <label>Civil Status</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="civilStatus" value="1" > Single</label>
+                    <label><input type="radio" name="civilStatus" value="2"> Married</label>
+                    <label><input type="radio" name="civilStatus" value="3"> Widow/er</label>
+                    <label><input type="radio" name="civilStatus" value="4"> Legally Separated</label>
+                </div>
+        </div>
+
+        <div class="field">
+            <label>Birthday</label>
+                <div class="radio-group">
+                    <label><input type="date" name="type" id="birthday">
+                </div>
+        </div>
+
+        <div class="field">
+            <label>Mother's Maiden Name</label>
+            <input type="text" id="motherName">
+        </div>
+
+        <div class="field">
+            <label>Father's Name</label>
+            <input type="text" id="fatherName">
+        </div>
+
+        <div class="field">
+            <label>Citizenship</label>
+            <input type="text" id="citizenship">
+        </div>
+
+        <div class="id-field">
+            <div class="field">
+                <label>Address</label>
+                <input type="text" id="address">
+            </div>
+
+            <div class="field">
+                <label>Place of Birth</label>
+                <input type="text" id="birthPlace">
+            </div>
+        </div>
+
+    <div class="id-field">
+
+        <div class="field">
+            <label>ID Type</label>
+            <input type=text id="idType">
+        </div>
+
+        <div class="field">
+            <label>ID Number</label>
+            <input type="text" id="idNumber">
+        </div>
+
+        <div class="field">
+            <label>Effectivity Date</label>
+            <input type="date" id="idEffectiveDate">
+        </div>
+
+        <div class="field">
+            <label>Expiry Date</label>
+            <input type="date" id="idExpiryDate">
+        </div>
+
+    </div>
+
+    <div class="field">
+            <label>Contact Number</label>
+            <input type="text" id="contactNumber">
+        </div>
+
+        <div class="field">
+            <label>Hired Date</label>
+            <input type="date" id="hiredDate">
+        </div>
+
+        <div class="field">
+        <label>Type of Multiple Employments</label>
+        <div class="radio-group">
+            <label><input type="radio" name="multiEmpType" value="1"> No Multiple Employment</label>
+            <label><input type="radio" name="multiEmpType" value="2"> Successive Employments</label>
+            <label><input type="radio" name="multiEmpType" value="3"> Concurrent Employments</label>
+        </div>
+        </div>
+
+        <div class="function-btn">
+            <a href="#" class="edit">
+                <span class="normal">EDIT</span>
+            </a>
+
+            <a href="#" class="save">
+                <span class="normal">SAVE</span>
+            </a>
+
+            <a href="#" class="delete">
+                <span class="normal">DELETE</span>
+            </a>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="nav-buttons">
+
+    <a href="0view.html" class="prev">
+        <span class="normal">← BACK</span>
+        <span class="hover">← ALL RECORDS</span>
+    </a>
+
+    <!--<a href="3cspouse.html" class="next">
+        <span class="normal">NEXT →</span>
+        <span class="hover">SPOUSE →</span>
+    </a>-->
+
+    </div>
+
+
+<script src="2ctaxpayer.js"></script>
+</body>
+
+</body>
+</html>

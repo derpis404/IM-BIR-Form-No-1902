@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Current Employer</title>
+    <link rel="stylesheet" href="0view.css">
+    <link rel="stylesheet" href="2ctaxpayer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!--HEADER TITLE-->
+    <div class="header-title">
+        BIR Form No. 1902
+    </div>
+
+    <!--HEADER SUBTITLE-->
+    <div class="header-subtitle">
+        Application for Registration for Individuals Earning Purely Compensation Income
+    </div>
+
+
+    <!--NAVBAR/STEPS-->
+    <div class="progress-nav">
+
+        <span class="indicator"></span>
+
+        <a href="0view.html" class="nav-item">ALL RECORDS</a>
+        <a href="2ctaxpayer.html" class="nav-item">TAXPAYER</a>
+        <a href="1ccurrent.html" class="nav-item active">CURRENT EMPLOYER</a>
+        <a href="3cspouse.html" class="nav-item">SPOUSE</a>
+        <a href="4cprevious.html" class="nav-item">PREVIOUS/CONCURRENT EMPLOYER</a>
+
+    </div>
+
+
+
+    <!--CONTENT BOX/FORM FIELD BOX-->
+    <div class="content-card">
+
+        <div class="section-header">
+            <div class="section-title">
+            Current/Primary Employer Information
+            </div>
+        </div>
+
+        <!-- LIST VIEW: all current employers, shown when no specific record is selected -->
+        <div id="listView">
+            <div id="recordsListContainer"></div>
+        </div>
+
+        <!-- FORM VIEW: create/edit one specific current employer -->
+        <div id="formView" style="display:none;">
+
+        <div class="field">
+            <label>Current Employer's Name</label>
+            <input type="text" id="empName">
+        </div>
+
+        <div class="field">
+            <label>Current Employer TIN</label>
+            <input type="text" id="empTin">
+        </div>
+
+        <div class="field">
+            <label>Employer's Address</label>
+            <input type="text" id="empAddress">
+        </div>
+
+        <div class="field">
+            <label>Contact Details</label>
+            <input type="text" id="empContact">
+        </div>
+
+
+        <div class="function-btn">
+            <a href="#" class="edit" id="editBtn">EDIT</a>
+            <a href="#" class="edit" id="saveBtn">SAVE</a>
+            <a href="#" class="delete" id="deleteBtn">DELETE</a>
+        </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+
+<!--NAVIGATION BUTTONS (PREVIOUS/NEXT)-->
+<div class="nav-buttons">
+
+    <a href="0view.html" class="prev">
+        <span class="normal">← BACK</span>
+        <span class="hover">← ALL RECORDS</span>
+    </a>
+
+    <!--<a href="2ctaxpayer.html" class="next">
+        <span class="normal">NEXT →</span>
+        <span class="hover">TAXPAYER →</span>
+    </a>-->
+
+</div>
+
+<script src="1ccurrent.js"></script>
+</body>
+</html>

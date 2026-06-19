@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Spouse</title>
+    <link rel="stylesheet" href="0view.css">
+    <link rel="stylesheet" href="3cspouse.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!--HEADER TITLE-->
+    <div class="header-title">
+        BIR Form No. 1902
+    </div>
+
+    <!--HEADER SUBTITLE-->
+    <div class="header-subtitle">
+        Application for Registration for Individuals Earning Purely Compensation Income
+    </div>
+
+
+    <!--NAVBAR/STEPS-->
+    <div class="progress-nav">
+
+        <span class="indicator"></span>
+
+        <a href="0view.html" class="nav-item">ALL RECORDS</a>
+        <a href="2ctaxpayer.html" class="nav-item">TAXPAYER</a>
+        <a href="1ccurrent.html" class="nav-item">CURRENT EMPLOYER</a>
+        <a href="3cspouse.html" class="nav-item active">SPOUSE</a>
+        <a href="4cprevious.html" class="nav-item">PREVIOUS/CONCURRENT EMPLOYER</a>
+
+    </div>
+
+    <!--CONTENT BOX/FORM FIELD BOX-->
+    <div class="content-card">
+
+        <div class="section-header">
+            <div class="section-title">
+            Spouse Information
+            </div>
+        </div>
+
+        <!-- LIST VIEW: all spouses, shown when no specific record is selected -->
+        <div id="listView">
+            <div id="recordsListContainer"></div>
+        </div>
+
+        <!-- FORM VIEW: create/edit one specific spouse -->
+        <div id="formView" style="display:none;">
+
+        <div class="field">
+            <label>Spouse Name</label>
+            <input type="text" id="spouseName">
+        </div>
+
+        <div class="field">
+            <label>Spouse TIN</label>
+            <input type="text" id="spouseTin">
+        </div>
+
+        <div class="field">
+            <label>Spouse Employment Status</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="spouseStatus" value="1"> Unemployed</label>
+                    <label><input type="radio" name="spouseStatus" value="2"> Employed Locally</label>
+                    <label><input type="radio" name="spouseStatus" value="3"> Employed Abroad</label>
+                    <label><input type="radio" name="spouseStatus" value="4"> Business/Profession</label>
+                </div>
+        </div>
+
+        <div class="field">
+            <label>Spouse Employer's Name</label>
+            <input type="text" id="spouseEmployerName">
+        </div>
+
+        <div class="field">
+            <label>Spouse Employer's TIN</label>
+            <input type="text" id="spouseEmployerTin">
+        </div>
+
+        <div class="function-btn">
+            <a href="#" class="edit">
+                <span class="normal">EDIT</span>
+            </a>
+
+            <a href="#" class="save">
+                <span class="normal">SAVE</span>
+            </a>
+
+            <a href="#" class="delete">
+                <span class="normal">DELETE</span>
+            </a>
+        </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!--NAVIGATION BUTTONS (PREVIOUS/NEXT)-->
+    <div class="nav-buttons">
+
+    <a href="0view.html" class="prev">
+        <span class="normal">← BACK</span>
+        <span class="hover">← ALL RECORDS</span>
+    </a>
+
+    <!--<a href="4cprevious.html" class="next">
+        <span class="normal">NEXT →</span>
+        <span class="hover">PREVIOUS EMP →</span>
+    </a>-->
+
+    </div>
+
+<script src="3cspouse.js"></script>
+</body>
+
+</body>
+</html>
